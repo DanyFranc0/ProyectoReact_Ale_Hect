@@ -72,14 +72,16 @@ const IndexAxion = () => {
   ];
 
   return (
+
     <Card>
+     
       <Flex alignItems="center" justifyContent="space-between" mobileFlex={false}>
         <div>
           <Button type="primary" icon={<PlusCircleOutlined />} block>Nuevo</Button>
         </div>
         <Flex className="mb-1" mobileFlex={false}>
           <div className="mr-md-3 mb-3">
-            <Input placeholder="Nuevo" prefix={<SearchOutlined />} onChange={handleSearch} />
+            <Input placeholder="Buscar" prefix={<SearchOutlined />} onChange={handleSearch} />
           </div>
         </Flex>
       </Flex>
