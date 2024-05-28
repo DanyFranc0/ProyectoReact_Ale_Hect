@@ -12,7 +12,7 @@ const IndexAxion = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const Data = async () => {
       const options = {
         method: 'GET',
         url: 'https://crud-operations2.p.rapidapi.com/api/v1',
@@ -33,7 +33,7 @@ const IndexAxion = () => {
       }
     };
 
-    fetchData();
+    Data();
   }, []);
 
   const handleSearch = (e) => {
